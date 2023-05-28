@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -35,18 +36,18 @@ export default function Home() {
             <p className="text-red-500 text-xs italic">Please choose a password.</p>
           </div>
           <div className="flex items-center justify-between">
-            <button
+            <Link href="/votingscreen"
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="button"
             >
               Sign In
-            </button>
-            <button
+            </Link>
+            <Link href="/admin/login"
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="button"
             >
               Admin
-            </button>
+            </Link>
           </div>
         </form>
         <p className="text-center text-gray-500 text-xs">
